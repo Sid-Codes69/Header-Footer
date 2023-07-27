@@ -1,649 +1,285 @@
-CSS
-body {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth; 
-}
-
-*{
-  padding: 0;
-  margin: 0;
-}
-.body{
-  position:relative;
-}
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  height:160px;
-  background-color: #34495E;
-  background-image: url("C:\Users\Ajay Malik\Downloads\MVN.gif")
-;
-
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-/* Apply styles to the header element */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-  background-color: #34495E;
-  background-image: url("C:\Users\Ajay Malik\Downloads\MVN.gif");
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-/* Style the logo and navigation links */
-.logo {
-  font-size: 24px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.nav-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  margin-right: 20px;
-}
-
-.nav-link a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Apply styles to the search container */
-.search-container {
-  display: flex;
-  align-items: center;
-}
-
-#search-input {
-  padding: 10px;
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-}
-
-button {
-  padding: 10px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-button i {
-  font-size: 16px;
-  color: #fff;
-}
-
-/* Optional styles for better appearance */
-#search-input:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Position the logo and search bar as desired */
-.logo {
-  margin-right: auto; /* Push the logo to the left */
-}
-
-.search-container {
-  margin-left: auto; /* Push the search bar to the right */
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #34495E;
-  color: white;
-}
-.card{
-  background-color: rgb(242, 235, 235);
-}
-.column{
-  background-color: rgb(5, 4, 4);
-}
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-li{
-  list-style:none;
-}
-a{
-  color:rgb(235, 230, 230);
-  text-decoration:none;
-
-}
-.container{
-  width:1280px;
-  margin:auto;
-  position: relative;
-  animation: floating 3s ease-in-out infinite;
-}
-.navbar{
-  width:95%;
-  margin:auto;
-  min-height:70px;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-}
-.nav-menu{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:60px;
-}
-.nav-branding{
-  font-size:2rem;
-  position: relative;
-animation: floating 3s ease-in-out infinite;
-
-}
-.home, .about, .contact{
-  height:720px;
-  margin-top: 70px;
-  border:1px solid black;
-  
-}
-
-.about, .contact{
-  margin-top:0;
-}
-@media(max-width:1280px){
-  .container{
-      width:100%;
-  }
-}
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-line-height: 1.5;
-font-family: 'Poppins', sans-serif;
-}
-*{
-margin:0;
-padding:0;
-box-sizing: border-box;
-}
-.container{
-max-width: 1170px;
-margin:auto;
-}
-.row{
-display: flex;
-flex-wrap: wrap;
-}
-ul{
-list-style: none;
-}
-.footer{
-background-color: #24262b;
-  padding: 70px 0;
-}
-.footer-col{
- width: 25%;
- padding: 0 15px;
-}
-.footer-col h4{
-font-size: 18px;
-color: #ffffff;
-text-transform: capitalize;
-margin-bottom: 35px;
-font-weight: 500;
-position: relative;
-}
-.footer-col h4::before{
-content: '';
-position: absolute;
-left:0;
-bottom: -10px;
-background-color: #e91e63;
-height: 2px;
-box-sizing: border-box;
-width: 50px;
-}
-.footer-col ul li:not(:last-child){
-margin-bottom: 10px;
-}
-.footer-col ul li a{
-font-size: 16px;
-text-transform: capitalize;
-color: #ffffff;
-text-decoration: none;
-font-weight: 300;
-color: #bbbbbb;
-display: block;
-transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-color: #ffffff;
-padding-left: 8px;
-}
-.footer-col .social-links a{
-display: inline-block;
-height: 40px;
-width: 40px;
-background-color: rgba(255,255,255,0.2);
-margin:0 10px 10px 0;
-text-align: center;
-line-height: 40px;
-border-radius: 50%;
-color: #ffffff;
-transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-color: #24262b;
-background-color: #ffffff;
-}
-
-@media(max-width: 767px){
-.footer-col{
-  width: 50%;
-  margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-.footer-col{
-  width: 100%;
-}
-}
-.lol{
-  color: rgba(255, 255, 255, 0.493);
-  
-}
-
-.nav-branding {
-  display: block;
-  text-align: center;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
-.uwwu {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-  background: #24262b;
-  border:10px white;
-}
-
-.calendar, .news {
-  width: 45%;
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  color: #333333;
-  margin-bottom: 15px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table th, table td {
-  padding: 10px;
-  text-align: center;
-}
-
-table th {
-  background-color: #4285F4;
-  color: #ffffff;
-}
-
-table td {
-  border: 1px solid #cccccc;
-}
-
-.news-item {
-  margin-bottom: 20px;
-}
-
-.news-item h3 {
-  color: #4285F4;
-}
-
-.news-item p {
-  color: #666666;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
-.admission-section {
-  max-width: 600px;
-  margin: 50px auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  color: #333333;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input, select, textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #4285F4;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #3367D6;
-}
-.hero-video {
-  width: 100%;
-  height: 100vh; 
-  overflow: hidden;
-  position: relative;
-}
-
-.hero-video img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: scaleAnimation 5s infinite alternate;
-}
-
-@keyframes scaleAnimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-#left{
-  text-align:left;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  position: relative;
-  z-index: 1; /* Ensures the header stays above the slider */
-}
-
-.slider-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease; /* Animation speed and easing */
-}
-
-.slide {
-  flex: 0 0 100%; /* Each slide takes the full width of the container */
-}
-
-.slide img {
-  width: 100%;
-  height: 300px; /* Adjust the height as needed */
-  object-fit: cover;
-}
-
-.slider-navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.prev-btn,
-.next-btn {
-  background-color: transparent;
-  color: #fff;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.prev-btn {
-  margin-right: 10px;
-}
-
-/* Optional: Add some animation to navigation buttons */
-.slider-navigation button:hover {
-  transform: scale(1.2);
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure the content takes up at least the full viewport height */
-}
-
-.main-container {
-  width: 90vw;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #2c3e50; /* Cool contrasting color (you can change this) */
-  color: #fff; /* Text color for better contrast */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  flex: 1; /* Allow the container to grow and fill the remaining space */
-}
-
-#contact-section {
-  padding: 20px;
-}
-
-#contact-section h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#contact-section form {
-  display: flex;
-  flex-direction: column;
-}
-
-#contact-section label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-#contact-section input,
-#contact-section textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#contact-section button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#contact-section button:hover {
-  background-color: #0056b3;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #f0f0f0; /* Choose a background color for the footer */
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.search-container {
-    text-align: center;
-    margin: 20px;
-}
-
-#search-input {
-    padding: 10px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-button img {
-    width: 20px; /* Adjust the size of the search icon */
-    vertical-align: middle; /* To vertically align the image inside the button */
-}
-
-/* Optional styles for better appearance */
-#search-input:focus {
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+<!--HTML -->   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Of Wonders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia’ rel=’"stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar">
+                    <h1 ><a href="/" class="nav-branding" >Academy Of Wonders</a></h1>
+                    <ul class="nav-menu">
+                        <li class="nav-link"><button><a href="/">Home</a></li></button>
+                        <li class="nav-link"><button><a href="/">About</a></li></button>
+                        <li class="nav-link"><button><a href="/">Contact</a></li></button>
+                    </ul>
+                    <div class="search-container">
+                        <form action="#" method="GET">
+                            <input type="text" id="search-input" name="search" placeholder="Search...">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                    </div>
+                    <img src="https://th.bing.com/th/id/OIG.79lu7bDlr68zoggQhYwN?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="" style="height:150px;width:200px;" id="left">
+                </nav>
+            </div>
+        </div>
+    </header> 
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img src="https://th.bing.com/th/id/OIG.q6MP8M0nZ_nHB2NxV9Y7?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGnre" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="https://th.bing.com/th/id/OIG.n0aI7SklgyoZKUlzXdUD?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="https://th.bing.com/th/id/OIG.qZmv8bZCjYFAudRcebZp?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Image 3">
+            
+          </div>
+        </div>
+        <div class="slider-navigation">
+          <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+          <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+    <script src="script.js"></script>
+            <section>
+                <div class="about-section" style="background-color: #010101;">
+                    <h1>Our Staff</h1>
+                    <p>Great men that have helped Academy Of Wonders become such big of an education provider.</p>
+                    
+                  </div>
+                  
+                  
+                  <div class="row" style="background-color: #34495E;">
+                    <div class="column" style="background-color: #030609;">
+                      <div class="card" style="background-color: #d9e1ec;">
+                    <img src="https://th.bing.com/th/id/OIG.lzOSOGI7raKM_tzQN9r1?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="John" style="width:100%">
+                        <div class="container">
+                          <h2>Mr.Necromar Shadowmance</h2>
+                          <p class="title"> Founder</p>
+                          <p>The Academy of Wonders was founded in 1987 by Mr. Necromar Shadowmancer with the goal of providing a fun and engaging education for students. The school’s unique approach to learning combines traditional academic subjects with hands-on experiences and magical adventures, allowing students to explore their passions and develop their skills in a supportive and nurturing environment.</p>
+                          <p>necsha@aowed.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                          <img src="https://th.bing.com/th/id/OIG.67phGsPSQ091bAA1.y4t?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="John" style="width:100%">
+                        <div class="container">
+                          <h2>Mr.Mysticor Spellweaver</h2>
+                          <p class="title">Chairman</p>
+                          <p>In 2001, Mr. Mysticor Spellweaver was elected as Chairman of the Magic Based Education company. Under his leadership, the company has focused on providing innovative and engaging educational experiences for students, combining traditional academic subjects with hands-on learning and magical adventures. His vision and dedication have helped to make the Magicalcompany a leader in its field.</p>
+                          <p>myswea@aowed.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <img src="https://th.bing.com/th/id/OIG.18lFRFw4r6LZ7saWzbqL?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="John" style="width:100%">
+                        <div class="container">
+                          <h2>Mr.Aurorius Lightbringe</h2>
+                          <p class="title">HOC</p>
+                          <p>Since 2002, Mr. Aurorius Lightbringer has been the Head of Country (HOC) for our school. In this role, he has overseen the school’s operations and ensured it provides high-quality education to its students. Mr. Lightbringer’s leadership and vision have helped make our school a leader in its field, inspiring countless students to pursue their dreams and achieve their full potential.</p>
+                          <p>aurolight@aowed.com</p>
+                          <p><button class="button">Contact</button></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                
+            </div>
+        </div>
+
+                
+            </div>
+        </div>
+    </section>
+       <section id="uwwu">
+    <div class="uwwu">
+        <div class="calendar">
+            <!-- Calendar content goes here -->
+            <!-- For simplicity, you can use a table for the calendar -->
+            <h2>Events this week!</h2>
+            <table>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <!-- Example cells -->
+                    <td>23</td>
+                    <td>24</td>
+                    <td style="background-color:#070708; color:wheat;">25</td>
+                    <td>26</td>
+                    <td style="background-color:#070708; color:wheat;">27</td>
+                    <td>28</td>
+                    <td>29</td>
+                </tr>
+                <p>25 July, Magic based ComicCon</p><br>
+                <p>27 July, School's 34th anniversary.</p>
+                <br>
+                <!-- Continue with more rows as needed -->
+            </table>
+        </div>
+        <div class="news" style="background-color: black;color: #4285F4;">
+            <!-- News content goes here -->
+            <h2 style="background-color: black; color:#4285F4">Latest News</h2>
+            <div class="news-item" style="background-color: black;">
+                <h3>Roller Coaster Transport</h3>
+                <p>We have successfully built the first Roller Coaster transport.
+                    ITS FREE!</p>
+                    <img src="https://th.bing.com/th/id/OIG.cKl3xN0H3OLkLkrhT0o0?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="" style="height:200px;width:500px;">
+                
+            </div>
+
+        
+</section>
+<!--Generate code for side by side images-->
+<section>
+<div class="animal-container">
+    <div class="animal dog">
+      <img src="https://th.bing.com/th/id/OIG.YXOjOavPrjcIVUMz2Vj8?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Dog">
+      <p>Dog</p>
+    </div>
+    <div class="animal cat">
+      <img src="https://th.bing.com/th/id/OIG.YXOjOavPrjcIVUMz2Vj8?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn" alt="Cat">
+      <p>Cat</p>
+    </div>
+  </div>
+</section>
+<section id="admission" >
+    <div class="admission-section" style="background-color: black; width: 100%;">
+        <h2 style="color:white">Admission Process</h2>
+        <p style="color:white">Welcome to our Academy Of Wonders! We are excited to have you join us on this enchanting journey. Please fill out the form below to apply for admission.</p>
+        <form action="#" method="POST" style="width:100%;">
+            <label for="name" style="color:white">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age" style="color:white">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="grade" style="color:white">Grade Applying for:</label>
+            <select id="grade" name="grade" required>
+                <option value="" disabled selected>Select Grade</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+                <option value="4">Grade 4</option>
+                <option value="5">Grade 5</option>
+
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11</option>
+                <option value="12">Grade 12</option>
+                <!-- Add more grade options as needed -->
+            </select>
+            
+            <label for="parentName" style="color:white">Parent/Guardian Name:</label>
+            <input type="text" id="parentName" name="parentName" required>
+            
+            <label for="email" style="color:white">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone" style="color:white">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="message" style="color:white">Additional Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <button type="submit" style="color:white">Submit Application</button>
+        </form>
+    </div>
+    </section>
+</section>
+    
+            <div class="main-container">
+                <section id="contact-section">
+                    <h1>Contact Us</h1>
+                    <form action="#" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+        
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+            </div>
+        
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Academy Of Wonders</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our courses</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore Academy Of Wonders</h4>
+                    <ul>
+                        <li><a href="#">Campus Map</a></li>
+                        <li><a href="#">Photo Gallery</a></li>
+                        <li><a href="#">Event Calendar</a></li>
+                        <li><a href="#">Student Events</a></li>
+                        <li><a href="#">Our Faculty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Other Info</h4>
+                    <ul>
+                        <li><a href="#">About The President</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-official" style="font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                        <p class="lol">Academy Of Wonders 1989 &copy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
+</html>
